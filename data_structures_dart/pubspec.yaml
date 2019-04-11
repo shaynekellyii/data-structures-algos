@@ -1,0 +1,10 @@
+name: data_structures
+version: 0.0.1-alpha.01
+author: Shayne Kelly II <me@shaynek.com>
+#repository:
+
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+
+dependencies:
+  test: ^1.6.2
