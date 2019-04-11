@@ -4,8 +4,6 @@ matrix:
       sudo: false
       dart: stable
       dist: trusty
-      before_install:
-        - cd $TRAVIS_BUILD_DIR/webapp-angular
       install_dartium: true
       script:
         - pub get && pub run test --platform dartium test/
@@ -14,5 +12,7 @@ matrix:
     - language: java
       jdk: oraclejdk8
       sudo: false
+      before_install:
+        - cd $TRAVIS_BUILD_DIR/DataStructures/DataStructuresJava
       script:
         - mvn clean verify
