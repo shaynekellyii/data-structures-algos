@@ -8,7 +8,7 @@ matrix:
       before_install:
         - cd $TRAVIS_BUILD_DIR/data_structures_dart
       script:
-        - pub get && pub run test --platform dartium test/
+        - pub get && pub run test test/
 
 
     - language: java
@@ -17,4 +17,6 @@ matrix:
       before_install:
         - cd $TRAVIS_BUILD_DIR/DataStructuresJava
       script:
+        - mvn clean verify
+        - cd ../DataStructuresKotlin
         - mvn clean verify
