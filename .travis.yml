@@ -1,0 +1,22 @@
+matrix:
+  include:
+    - language: dart
+      sudo: false
+      dart: stable
+      dist: trusty
+      install_dartium: true
+      before_install:
+        - cd $TRAVIS_BUILD_DIR/data_structures_dart
+      script:
+        - pub get && pub run test test/
+
+
+    - language: java
+      jdk: oraclejdk8
+      sudo: false
+      before_install:
+        - cd $TRAVIS_BUILD_DIR/DataStructuresJava
+      script:
+        - mvn clean verify
+        - cd ../DataStructuresKotlin
+        - mvn clean verify
