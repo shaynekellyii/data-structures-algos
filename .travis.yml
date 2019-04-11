@@ -1,1 +1,18 @@
-language: java
+matrix:
+  include:
+    - language: dart
+      sudo: false
+      dart: stable
+      dist: trusty
+      before_install:
+        - cd $TRAVIS_BUILD_DIR/webapp-angular
+      install_dartium: true
+      script:
+        - pub get && pub run test --platform dartium test/
+
+
+    - language: java
+      jdk: oraclejdk8
+      sudo: false
+      script:
+        - mvn clean verify
