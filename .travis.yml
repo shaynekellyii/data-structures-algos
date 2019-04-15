@@ -8,8 +8,8 @@ matrix:
       before_install:
         - cd $TRAVIS_BUILD_DIR/data_structures_dart
       script:
-        - pub get && pub run test test/
-
+        - pub get && pub run test_coverage
+        - bash <(curl -s https://codecov.io/bash)
 
     - language: java
       jdk: oraclejdk8
