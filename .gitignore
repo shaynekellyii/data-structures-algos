@@ -90,3 +90,4 @@ doc/api/
 *.js.map
 
 **/test/.test_coverage.dart
+**/coverage/*
