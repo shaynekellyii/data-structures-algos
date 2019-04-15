@@ -6,5 +6,6 @@ author: Shayne Kelly II <me@shaynek.com>
 environment:
   sdk: '>=2.0.0 <3.0.0'
 
-dependencies:
+dev_dependencies:
   test: ^1.6.2
+  test_coverage: ^0.2.0
