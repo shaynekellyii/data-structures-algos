@@ -9,6 +9,7 @@ matrix:
         - cd $TRAVIS_BUILD_DIR/data_structures_dart
       script:
         - pub get && pub run test_coverage
+      after_success:
         - bash <(curl -s https://codecov.io/bash)
 
     - language: java
@@ -18,5 +19,9 @@ matrix:
         - cd $TRAVIS_BUILD_DIR/DataStructuresJava
       script:
         - mvn clean verify
+        - mvn cobertura:cobertura
         - cd ../DataStructuresKotlin
         - mvn clean verify
+        - mvn cobertura:cobertura
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
