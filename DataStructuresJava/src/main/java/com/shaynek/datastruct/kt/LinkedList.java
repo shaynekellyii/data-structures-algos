@@ -1,4 +1,4 @@
-package com.shaynek.datastruct;
+package com.shaynek.datastruct.kt;
 
 public class LinkedList<T> {
 

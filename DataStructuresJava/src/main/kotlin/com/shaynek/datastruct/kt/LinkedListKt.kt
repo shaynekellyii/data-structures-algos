@@ -1,6 +1,6 @@
-package com.shaynek.datastruct
+package com.shaynek.datastruct.kt
 
-class LinkedList<T> {
+class LinkedListKt<T> {
 
     var length = 0
     private var head: Node<T>? = null

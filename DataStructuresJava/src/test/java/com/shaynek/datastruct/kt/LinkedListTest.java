@@ -1,4 +1,4 @@
-package com.shaynek.datastruct;
+package com.shaynek.datastruct.kt;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
