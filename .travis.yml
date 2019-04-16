@@ -23,4 +23,5 @@ matrix:
         - bash <(curl -s https://codecov.io/bash)
         - cd ../DataStructuresKotlin
         - mvn clean verify
+        - mvn test
         - bash <(curl -s https://codecov.io/bash)
